@@ -61,7 +61,7 @@ export enum ApiPath {
   Anthropic = "/api/anthropic",
   Google = "/api/google",
   Baidu = "/api/baidu",
-  ByteDance = "/api/bytedance",
+  ByteDance = "/api/v3/chat/completions",
   Alibaba = "/api/alibaba",
   Tencent = "/api/tencent",
   Moonshot = "/api/moonshot",
@@ -215,7 +215,7 @@ export const Baidu = {
 };
 
 export const ByteDance = {
-  ExampleEndpoint: "https://ark.cn-beijing.volces.com/api/",
+  ExampleEndpoint: "https://ark.cn-beijing.volces.com/",
   ChatPath: "api/v3/chat/completions",
 };
 
@@ -408,9 +408,9 @@ You are an AI assistant with access to system tools. Your role is to help users 
    
 `;
 
-export const SUMMARIZE_MODEL = "gpt-4o-mini";
-export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
-export const DEEPSEEK_SUMMARIZE_MODEL = "deepseek-chat";
+export const SUMMARIZE_MODEL = "grok-3-beta";
+export const GEMINI_SUMMARIZE_MODEL = "gemini-2.0-flash";
+export const DEEPSEEK_SUMMARIZE_MODEL = "DeepSeek-R1";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2025-04",
@@ -510,34 +510,11 @@ const googleModels = [
 ];
 
 const anthropicModels = [
-  "claude-instant-1.2",
-  "claude-2.0",
-  "claude-2.1",
-  "claude-3-sonnet-20240229",
-  "claude-3-opus-20240229",
-  "claude-3-opus-latest",
-  "claude-3-haiku-20240307",
-  "claude-3-5-haiku-20241022",
-  "claude-3-5-haiku-latest",
-  "claude-3-5-sonnet-20240620",
-  "claude-3-5-sonnet-20241022",
-  "claude-3-5-sonnet-latest",
-  "claude-3-7-sonnet-20250219",
-  "claude-3-7-sonnet-latest",
+
 ];
 
 const baiduModels = [
-  "ernie-4.0-turbo-8k",
-  "ernie-4.0-8k",
-  "ernie-4.0-8k-preview",
-  "ernie-4.0-8k-preview-0518",
-  "ernie-4.0-8k-latest",
-  "ernie-3.5-8k",
-  "ernie-3.5-8k-0205",
-  "ernie-speed-128k",
-  "ernie-speed-8k",
-  "ernie-lite-8k",
-  "ernie-tiny-8k",
+
 ];
 
 const bytedanceModels = [
@@ -550,36 +527,17 @@ const bytedanceModels = [
   // "Doubao-pro-128k",
 
 const alibabaModes = [
-  "qwen-turbo",
-  "qwen-plus",
-  "qwen-max",
-  "qwen-max-0428",
-  "qwen-max-0403",
-  "qwen-max-0107",
-  "qwen-max-longcontext",
-  "qwen-omni-turbo",
-  "qwen-vl-plus",
-  "qwen-vl-max",
+
 ];
 
 const tencentModels = [
-  "hunyuan-pro",
-  "hunyuan-standard",
-  "hunyuan-lite",
-  "hunyuan-role",
-  "hunyuan-functioncall",
-  "hunyuan-code",
-  "hunyuan-vision",
+
 ];
 
 const moonshotModes = ["moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"];
 
 const iflytekModels = [
-  "general",
-  "generalv3",
-  "pro-128k",
-  "generalv3.5",
-  "4.0Ultra",
+
 ];
 
 const deepseekModels = ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"];
@@ -592,20 +550,7 @@ const xAIModes = [
 ];
 
 const chatglmModels = [
-  "glm-4-plus",
-  "glm-4-0520",
-  "glm-4",
-  "glm-4-air",
-  "glm-4-airx",
-  "glm-4-long",
-  "glm-4-flashx",
-  "glm-4-flash",
-  "glm-4v-plus",
-  "glm-4v",
-  "glm-4v-flash", // free
-  "cogview-3-plus",
-  "cogview-3",
-  "cogview-3-flash", // free
+
   // 目前无法适配轮询任务
   //   "cogvideox",
   //   "cogvideox-flash", // free
