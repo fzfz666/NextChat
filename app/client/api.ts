@@ -108,9 +108,7 @@ export abstract class LLMApi {
   abstract chat(options: ChatOptions): Promise<void>;
   abstract speech(options: SpeechOptions): Promise<ArrayBuffer>;
   abstract usage(): Promise<LLMUsage>;
-  models(): Promise<LLMModel[]> {
-    return Promise.resolve([]);
-  }
+  abstract models(): Promise<LLMModel[]>;
 }
 
 type ProviderName = "openai" | "azure" | "claude" | "palm";
