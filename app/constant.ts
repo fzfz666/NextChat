@@ -1,5 +1,5 @@
-export const OWNER = "ChatGPTNextWeb";
-export const REPO = "ChatGPT-Next-Web";
+export const OWNER = "fzfz666";
+export const REPO = "NextChat";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const PLUGINS_REPO_URL = `https://github.com/${OWNER}/NextChat-Awesome-Plugins`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -518,8 +518,8 @@ const baiduModels = [
 ];
 
 const bytedanceModels = [
-  "DeepSeek-R1",
-  "DeepSeek-V3",
+  "deepseek-r1",
+  "deepseek-v3",
 ];
   // "Doubao-lite-128k",
   // "Doubao-pro-4k",
