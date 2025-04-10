@@ -520,6 +520,8 @@ const baiduModels = [
 const bytedanceModels = [
   "deepseek-r1",
   "deepseek-v3",
+  "ep-20250226163719-7wz4x",
+  "ep-20250226163836-w9nch",
 ];
   // "Doubao-lite-128k",
   // "Doubao-pro-4k",
