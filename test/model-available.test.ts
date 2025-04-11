@@ -1,10 +1,10 @@
 import { isModelNotavailableInServer } from "../app/utils/model";
 
 describe("isModelNotavailableInServer", () => {
-  test("test model will return false, which means the model is available", () => {
+  test("test default available XAI model should return false", () => {
     const customModels = "";
-    const modelName = "gpt-4";
-    const providerNames = "OpenAI";
+    const modelName = "grok-3-fast-beta";
+    const providerNames = "xai";
     const result = isModelNotavailableInServer(
       customModels,
       modelName,

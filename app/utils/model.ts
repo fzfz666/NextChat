@@ -69,7 +69,8 @@ export function collectModelTable(
     // using <modelName>@<providerId> as fullName
     modelTable[`${m.name}@${m?.provider?.id}`] = {
       ...m,
-      displayName: m.name, // 'provider' is copied over if it exists
+      // 优先使用 m.displayName，如果不存在则使用 m.name
+      displayName: m.displayName || m.name,
     };
   });
 
