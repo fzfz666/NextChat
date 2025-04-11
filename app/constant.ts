@@ -519,8 +519,10 @@ const baiduModels = [
 ];
 
 const bytedanceModels = [
-  "DeepSeek-R1",
+  "deepseek-r1",
   "DeepSeek-V3",
+  "ep-20250226163836-w9nch",
+  "ep-20250226163719-7wz4x",
 ];
 
   // "Doubao-pro-4k",
@@ -560,14 +562,14 @@ const chatglmModels = [
 const siliconflowModels = [
   "Qwen/Qwen2.5-7B-Instruct",
   "Qwen/Qwen2.5-72B-Instruct",
-  "deepseek-ai/DeepSeek-R1",
-  "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-  "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
-  "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-  "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-  "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-  "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-  "deepseek-ai/DeepSeek-V3",
+  // "deepseek-ai/DeepSeek-R1",
+  // "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+  // "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  // "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  // "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  // "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  // "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  // "deepseek-ai/DeepSeek-V3",
   "meta-llama/Llama-3.3-70B-Instruct",
   "THUDM/glm-4-9b-chat",
   "Pro/deepseek-ai/DeepSeek-R1",
