@@ -411,7 +411,7 @@ You are an AI assistant with access to system tools. Your role is to help users 
 
 export const SUMMARIZE_MODEL = "grok-3-beta";
 export const GEMINI_SUMMARIZE_MODEL = "gemini-2.0-flash";
-export const DEEPSEEK_SUMMARIZE_MODEL = "DeepSeek-R1";
+export const DEEPSEEK_SUMMARIZE_MODEL = "ep-20250226163719-7wz4x";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2025-04",
@@ -460,7 +460,6 @@ export const VISION_MODEL_REGEXES = [
   /vision/,
   /gpt-4o/,
   /claude-3/,
-  /grok-2-image/,
   /gemini-1\.5/,
   /gemini-exp/,
   /gemini-2\.0/,
@@ -470,6 +469,7 @@ export const VISION_MODEL_REGEXES = [
   /gpt-4-turbo(?!.*preview)/, // Matches "gpt-4-turbo" but not "gpt-4-turbo-preview"
   /^dall-e-3$/, // Matches exactly "dall-e-3"
   /glm-4v/,
+  /grok-.*-image/,
   /vl/i,
 ];
 
@@ -520,10 +520,10 @@ const baiduModels = [
 ];
 
 const bytedanceModels = [
-  "deepseek-r1",
-  "DeepSeek-V3",
-  "ep-20250226163836-w9nch",
-  "ep-20250226163719-7wz4x",
+  // { id: "deepseek-r1", displayName: "DeepSeek-R1" }, // 原始模型示例
+  // { id: "DeepSeek-V3", displayName: "DeepSeek-V3" }, // 原始模型示例
+  { id: "ep-20250226163836-w9nch", displayName: "DeepSeek-V3" }, // 您可以改成更合适的名称
+  { id: "ep-20250226163719-7wz4x", displayName: "DeepSeek-R1" }, // 您可以改成更合适的名称，比如 "DeepSeek定制版"
 ];
 
   // "Doubao-pro-4k",
@@ -634,8 +634,9 @@ export const DEFAULT_MODELS = [
   //     sorted: 5,
   //   },
   // })),
-  ...bytedanceModels.map((name) => ({
-    name,
+  ...bytedanceModels.map((modelInfo) => ({
+    name: modelInfo.id, // 使用 id 作为 API 请求的 name
+    displayName: modelInfo.displayName, // 使用 displayName 作为 UI 显示名称
     available: true,
     sorted: seq++,
     provider: {
