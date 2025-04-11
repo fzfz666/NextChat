@@ -579,6 +579,31 @@ const siliconflowModels = [
 
 let seq = 1000; // 内置的模型序号生成器从1000开始
 export const DEFAULT_MODELS = [
+  ...xAIModes.map((name) => ({
+    name,
+    available: true,
+    sorted: seq++,
+    provider: {
+      id: "xai",
+      providerName: "XAI",
+      providerType: "xai",
+      sorted: 11,
+    },
+  })),
+  ...bytedanceModels.map((modelInfo) => ({
+    name: modelInfo.id, // 使用 id 作为 API 请求的 name
+    displayName: modelInfo.displayName, // 使用 displayName 作为 UI 显示名称
+    available: true,
+    sorted: seq++,
+    provider: {
+      id: "bytedance",
+      providerName: "ByteDance",
+      providerType: "bytedance",
+      sorted: 6,
+    },
+  })),
+/////////////////////////
+
   ...openaiModels.map((name) => ({
     name,
     available: false,
@@ -634,18 +659,18 @@ export const DEFAULT_MODELS = [
   //     sorted: 5,
   //   },
   // })),
-  ...bytedanceModels.map((modelInfo) => ({
-    name: modelInfo.id, // 使用 id 作为 API 请求的 name
-    displayName: modelInfo.displayName, // 使用 displayName 作为 UI 显示名称
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "bytedance",
-      providerName: "ByteDance",
-      providerType: "bytedance",
-      sorted: 6,
-    },
-  })),
+  // ...bytedanceModels.map((modelInfo) => ({
+  //   name: modelInfo.id, // 使用 id 作为 API 请求的 name
+  //   displayName: modelInfo.displayName, // 使用 displayName 作为 UI 显示名称
+  //   available: true,
+  //   sorted: seq++,
+  //   provider: {
+  //     id: "bytedance",
+  //     providerName: "ByteDance",
+  //     providerType: "bytedance",
+  //     sorted: 6,
+  //   },
+  // })),
   // ...alibabaModes.map((name) => ({
   //   name,
   //   available: true,
@@ -690,17 +715,17 @@ export const DEFAULT_MODELS = [
   //     sorted: 10,
   //   },
   // })),
-  ...xAIModes.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "xai",
-      providerName: "XAI",
-      providerType: "xai",
-      sorted: 11,
-    },
-  })),
+  // ...xAIModes.map((name) => ({
+  //   name,
+  //   available: true,
+  //   sorted: seq++,
+  //   provider: {
+  //     id: "xai",
+  //     providerName: "XAI",
+  //     providerType: "xai",
+  //     sorted: 11,
+  //   },
+  // })),
   // ...chatglmModels.map((name) => ({
   //   name,
   //   available: true,
