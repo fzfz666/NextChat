@@ -14,9 +14,9 @@ describe("isModelNotavailableInServer", () => {
   });
 
   test("test model will return true when model is not available in custom models", () => {
-    const customModels = "-all,gpt-4o-mini";
-    const modelName = "gpt-4";
-    const providerNames = "OpenAI";
+    const customModels = "-all,grok-3-beta";
+    const modelName = "grok";
+    const providerNames = "xai";
     const result = isModelNotavailableInServer(
       customModels,
       modelName,
