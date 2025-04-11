@@ -80,7 +80,6 @@ const newMasks: BuiltinMask[] = [
 ];
 
 export const CN_MASKS: BuiltinMask[] = [
-  ...newMasks, // 将新助手放在数组开头
   {
     avatar: "1f5bc-fe0f",
     name: "AI文生图",
@@ -518,4 +517,5 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
     createdAt: 1688899480537,
   },
+  ...newMasks, // 将新助手放在数组开头
 ];
