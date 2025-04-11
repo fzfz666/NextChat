@@ -460,6 +460,7 @@ export const VISION_MODEL_REGEXES = [
   /vision/,
   /gpt-4o/,
   /claude-3/,
+  /grok-2-image/,
   /gemini-1\.5/,
   /gemini-exp/,
   /gemini-2\.0/,
