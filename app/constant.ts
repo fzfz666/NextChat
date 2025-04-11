@@ -11,7 +11,8 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const STABILITY_BASE_URL = "https://api.stability.ai";
 
-export const OPENAI_BASE_URL = "https://api.openai.com";
+//export const OPENAI_BASE_URL = "https://api.openai.com";
+
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
@@ -57,7 +58,7 @@ export enum Path {
 export enum ApiPath {
   Cors = "",
   Azure = "/api/azure",
-  OpenAI = "/api/openai",
+  OpenAI = "/api/xai",
   Anthropic = "/api/anthropic",
   Google = "/api/google",
   Baidu = "/api/baidu",
