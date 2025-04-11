@@ -61,7 +61,7 @@ export enum ApiPath {
   Anthropic = "/api/anthropic",
   Google = "/api/google",
   Baidu = "/api/baidu",
-  ByteDance = "/api/v3/chat/completions",
+  ByteDance = "/api/bytedance",
   Alibaba = "/api/alibaba",
   Tencent = "/api/tencent",
   Moonshot = "/api/moonshot",
@@ -251,6 +251,7 @@ export const DeepSeek = {
 export const XAI = {
   ExampleEndpoint: XAI_BASE_URL,
   ChatPath: "v1/chat/completions",
+  ImagePath: "v1/images/generations",
 };
 
 export const ChatGLM = {
