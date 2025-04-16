@@ -478,10 +478,10 @@ export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
 
 const openaiModels = [
  //"gpt-3.5-turbo",
- "gpt-4.1",
- //"gpt-4.1-mini",
- //"gpt-4.1-nano",
- "gpt-4o-mini",
+ //"gpt-4.1",
+ "gpt-4.1-mini",
+ "gpt-4.1-nano",
+ //"gpt-4o-mini",
 ];
   
 const googleModels = [
