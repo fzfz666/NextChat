@@ -7,6 +7,7 @@ import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { getServerSideConfig } from "./config/server";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "FangChat",
@@ -54,6 +55,7 @@ export default function RootLayout({
         {serverConfig?.isVercel && (
           <>
             <SpeedInsights />
+            <Analytics />
           </>
         )}
         {serverConfig?.gtmId && (
