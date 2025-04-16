@@ -1,10 +1,11 @@
 export const OWNER = "fzfz666";
 export const REPO = "NextChat";
-export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
+export const REPO_URL = `https://blog.mindto.top`;//`https://github.com/${OWNER}/${REPO}`;
+export const REPO_URL1 = `https://github.com/${OWNER}/${REPO}`;
 export const PLUGINS_REPO_URL = `https://github.com/${OWNER}/NextChat-Awesome-Plugins`;
-export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
-export const UPDATE_URL = `${REPO_URL}#keep-updated`;
-export const RELEASE_URL = `${REPO_URL}/releases`;
+export const ISSUE_URL = `https://blog.mindto.top`;//`https://github.com/${OWNER}/${REPO}/issues`;
+export const UPDATE_URL = `${REPO_URL1}#keep-updated`;
+export const RELEASE_URL = `${REPO_URL1}/releases`;
 export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/commits?per_page=1`;
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
@@ -490,7 +491,7 @@ const openaiModels = [
 const googleModels = [
   "gemini-2.0-flash-thinking-exp-01-21", // Deprecated on 2/15/2025
  // "gemini-2.0-flash-exp-image-generation",
-  "gemini-2.5.pro-exp-03-25",
+  "(访问过载，暂不支持)gemini-2.5.pro-exp-03-25",
 
 ];
 
@@ -589,7 +590,7 @@ export const DEFAULT_MODELS = [
 
   ...openaiModels.map((name) => ({
     name,
-    available: true,
+    available: false,
     sorted: seq++, // Global sequence sort(index)
     provider: {
       id: "openai",
