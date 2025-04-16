@@ -11,7 +11,7 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const STABILITY_BASE_URL = "https://api.stability.ai";
 
-export const OPENAI_BASE_URL = "https://api.openai.com";
+export const OPENAI_BASE_URL = "https://api-mo-1001.onrender.com";
 
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
@@ -477,37 +477,16 @@ export const VISION_MODEL_REGEXES = [
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
 
 const openaiModels = [
- "gpt-3.5-turbo",
+ //"gpt-3.5-turbo",
+ "gpt-4.1",
+ //"gpt-4.1-mini",
+ //"gpt-4.1-nano",
+ "gpt-4o-mini",
 ];
-  // As of July 2024, gpt-4o-mini should be used in place of gpt-3.5-turbo,
-  // as it is cheaper, more capable, multimodal, and just as fast. gpt-3.5-turbo is still available for use in the API.
-  // "gpt-3.5-turbo",
-  // "gpt-3.5-turbo-1106",
-  // "gpt-3.5-turbo-0125",
-  // "gpt-4",
-  // "gpt-4-0613",
-  // "gpt-4-32k",
-  // "gpt-4-32k-0613",
-  // "gpt-4-turbo",
-  // "gpt-4-turbo-preview",
-  // "gpt-4o",
-  // "gpt-4o-2024-05-13",
-  // "gpt-4o-2024-08-06",
-  // "gpt-4o-2024-11-20",
-  // "chatgpt-4o-latest",
-  // "gpt-4o-mini",
-  // "gpt-4o-mini-2024-07-18",
-  // "gpt-4-vision-preview",
-  // "gpt-4-turbo-2024-04-09",
-  // "gpt-4-1106-preview",
-  // "dall-e-3",
-  // "o1-mini",
-  // "o1-preview",
-  // "o3-mini",
   
 const googleModels = [
   "gemini-2.0-flash-thinking-exp-01-21", // Deprecated on 2/15/2025
-  "gemini-2.0-flash-exp-image-generation",
+ // "gemini-2.0-flash-exp-image-generation",
   "gemini-2.5.pro-exp-03-25",
 
 ];
@@ -549,7 +528,7 @@ const deepseekModels = ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"];
 
 const xAIModes = [
   "grok-3-fast-beta",
-  "grok-2-image-1212",
+ // "grok-2-image-1212",
   // "grok-2-vision",
   // "grok-2-vision-latest",
 ];
@@ -607,7 +586,7 @@ export const DEFAULT_MODELS = [
 
   ...openaiModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++, // Global sequence sort(index)
     provider: {
       id: "openai",
