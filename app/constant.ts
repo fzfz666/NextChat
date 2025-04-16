@@ -9,13 +9,15 @@ export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/c
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
+
 export const STABILITY_BASE_URL = "https://api.stability.ai";
 
 export const OPENAI_BASE_URL = "https://api-mo-1001.onrender.com";
 
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
-export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
+//export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
+export const GEMINI_BASE_URL = "https://gateway.ai.cloudflare.com/v1/558b0aade250ddbba8c0f8f84729b942/xai-xuedi/google-ai-studio/";
 
 export const BAIDU_BASE_URL = "https://aip.baidubce.com";
 export const BAIDU_OATUH_URL = `${BAIDU_BASE_URL}/oauth/2.0/token`;
@@ -31,7 +33,8 @@ export const IFLYTEK_BASE_URL = "https://spark-api-open.xf-yun.com";
 
 export const DEEPSEEK_BASE_URL = "https://api.deepseek.com";
 
-export const XAI_BASE_URL = "https://api.x.ai";
+//export const XAI_BASE_URL = "https://api.x.ai";
+export const XAI_BASE_URL = "https://gateway.ai.cloudflare.com/v1/558b0aade250ddbba8c0f8f84729b942/xai-xuedi/grok";
 
 export const CHATGLM_BASE_URL = "https://open.bigmodel.cn";
 
