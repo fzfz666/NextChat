@@ -506,7 +506,7 @@ const baiduModels = [
 const bytedanceModels = [
   // { id: "deepseek-r1", displayName: "DeepSeek-R1" }, // 原始模型示例
   // { id: "DeepSeek-V3", displayName: "DeepSeek-V3" }, // 原始模型示例
-  { id: "ep-20250226163836-w9nch", displayName: "DeepSeek-V3" }, // 您可以改成更合适的名称
+  { id: "ep-20250416235929-znxcx", displayName: "DeepSeek-V3" }, // 您可以改成更合适的名称
   { id: "ep-20250226163719-7wz4x", displayName: "DeepSeek-R1" }, // 您可以改成更合适的名称，比如 "DeepSeek定制版"
 ];
 
